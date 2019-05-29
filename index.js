@@ -13,9 +13,7 @@ var gamePattern = [];
 var userClickedPattern = [];
 
 //Call nextSequence once keyboard key is pressed
-// $(document).keypress(function()
-//Click allows to be accessible on tablets and smartphones
-$(document).click(function() {
+$(document).keypress(function() {
   if (!started) {
     $('#level-title').text('Level ' + level);
     nextSequence();
