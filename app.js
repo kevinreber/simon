@@ -86,7 +86,7 @@ function nextSequence() {
   playSound(randomChosenColor);
 }
 
-//Plays sound everytime button is activated
+//Plays sound when a button is activated
 function playSound(name) {
   var audio = new Audio('sounds/' + name + '.mp3');
   if (sound) {
