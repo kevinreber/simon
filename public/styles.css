@@ -1,34 +1,20 @@
 body {
   text-align: center;
   background-color: #ffe9bf;
-}
-
-#level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 1.5rem;
-  margin: 5% auto;
-  padding: 20px;
-  background-color: orange;
-  border: 5px solid black;
-  border-radius: 10px;
-  color: #000;
-  width: 70%;
-  line-height: 125%;
 }
 
 .container {
-  display: block;
-  width: 50%;
+  width: 400px;
   margin: auto;
-
+  position: relative;
 }
 
 .btn {
   margin: 0;
   display: inline-block;
-  height: 100px;
-  width: 100px;
-  border: 5px solid black;
+  height: 150px;
+  width: 150px;
 }
 
 .btn:hover {
@@ -36,8 +22,18 @@ body {
 }
 
 .btn,
+.circle,
+#level-title {
+  border: 5px solid black;
+}
+
+.btn,
 .sound {
   cursor: pointer;
+}
+
+.row {
+  margin-bottom: 12px;
 }
 
 .game-over {
@@ -70,61 +66,68 @@ body {
   background-color: grey;
 }
 
-/* .center{
-  width: 140px;
-  height: 140px;
+.circle {
+  position: absolute;
+  top: 112px;
+  left: 143px;
+  width: 100px;
+  height: 100px;
   background-color: #ffffff;
-  border: 10px solid #000000;
   border-radius: 100%;
   z-index: 100;
 }
 
-.center-container{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: calc(50%-80px);
-  margin-left: -80px;
-} */
+.start-btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
 
 .sound {
   width: 30px;
   height: 30px;
   position: absolute;
-  bottom: 25px;
-  right: 25px;
+  bottom: 56px;
+  right: 56px;
 }
 
-
-@media (min-width: 700px) {
-
-  .btn {
-    height: 150px;
-    width: 150px;
-  }
-
-  #level-title {
-    font-size: 2.8rem;
-  }
+#level-title {
+  font-size: 2.8rem;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: orange;
+  border-radius: 10px;
+  color: #000;
+  width: 70%;
+  line-height: 125%;
 }
 
 @media (min-width: 900px) {
 
+  .container {
+    width: 640px;
+  }
+
   .btn {
-    height: 190px;
-    width: 190px;
+    height: 200px;
+    width: 200px;
   }
 
   #level-title,
-  .btn {
-    border: 10px solid black;
+  .btn,
+  .circle {
+    border: 8px solid black;
   }
 
   .sound {
     width: 56px;
     height: 56px;
+  }
+
+  .circle {
+    top: 140px;
+    left: 239px;
+    width: 140px;
+    height: 140px;
   }
 }
