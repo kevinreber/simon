@@ -1,7 +1,7 @@
 ## Simon Says Challenge 
 Player must repeat the sequence in the same order that it's generated.
 
-This project focused on:
+Project Focus:
 - DOM manipulation
 - Using sound in an application
 - Generating random patterns
